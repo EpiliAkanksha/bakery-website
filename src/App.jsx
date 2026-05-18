@@ -46,7 +46,9 @@ function App() {
 
         <ul>
           <li>Home</li>
-          <li>Menu</li>
+          <li>
+  <a href="#menu">Menu</a>
+</li>
           <li>About</li>
           <li>Contact</li>
           <li>Cart ({totalItems})</li>
@@ -59,7 +61,7 @@ function App() {
         <button>Order Now</button>
       </div>
 
-      <div className="products">
+      <div id="menu" className="products">
 
         {/* SAMOSA */}
         <div className="card">
