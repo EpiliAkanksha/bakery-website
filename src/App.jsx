@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <nav className="navbar">
-        <h2>Golden Crust, Akanksha</h2>
+        <h2>Golden Crust</h2>
 
         <ul>
           <li>Home</li>
