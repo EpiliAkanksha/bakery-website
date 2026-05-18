@@ -71,6 +71,12 @@ function App() {
           />
           <h3>Samosa</h3>
           <p>₹20</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+          </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("samosa")}>-</button>
