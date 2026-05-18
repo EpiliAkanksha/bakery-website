@@ -287,10 +287,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 25px;
+  margin-top: 20px;
 }
 
+.quantity span {
+  font-size: 24px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
 .quantity button {
   background: #d35400;
   color: white;
