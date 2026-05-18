@@ -95,6 +95,12 @@ function App() {
           />
           <h3>Veg Puff</h3>
           <p>₹30</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("puff")}>-</button>
@@ -113,6 +119,12 @@ function App() {
           />
           <h3>Chocolate Cake</h3>
           <p>₹250</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("cake")}>-</button>
@@ -131,6 +143,12 @@ function App() {
           />
           <h3>Donut</h3>
           <p>₹60</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("donut")}>-</button>
@@ -149,6 +167,12 @@ function App() {
           />
           <h3>Cupcake</h3>
           <p>₹80</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("cupcake")}>-</button>
@@ -167,6 +191,12 @@ function App() {
           />
           <h3>Croissant</h3>
           <p>₹90</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("croissant")}>-</button>
@@ -185,6 +215,12 @@ function App() {
           />
           <h3>Cookies</h3>
           <p>₹120</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("cookies")}>-</button>
@@ -203,6 +239,12 @@ function App() {
           />
           <h3>Brownie</h3>
           <p>₹100</p>
+          <button
+          className="add-btn"
+          onClick={() => increaseItem("samosa")}
+          >
+          Add to Cart
+        </button>
 
           <div className="quantity">
             <button onClick={() => decreaseItem("brownie")}>-</button>
