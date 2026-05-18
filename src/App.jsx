@@ -1,6 +1,10 @@
 import "./App.css";
-
+import { useState } from "react";
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+  const addToCart = () => {
+  setCartCount(cartCount + 1);
+};
   return (
     <div>
       <nav className="navbar">
@@ -11,6 +15,7 @@ function App() {
           <li>Menu</li>
           <li>About</li>
           <li>Contact</li>
+          <li>Cart ({cartCount})</li>
         </ul>
       </nav>
 
@@ -28,6 +33,7 @@ function App() {
           />
           <h3>Samosa</h3>
           <p>₹20</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -37,6 +43,7 @@ function App() {
           />
           <h3>Veg Puff</h3>
           <p>₹30</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -46,6 +53,7 @@ function App() {
           />
           <h3>Chocolate Cake</h3>
           <p>₹250</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -55,6 +63,7 @@ function App() {
           />
           <h3>Donut</h3>
           <p>₹60</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -64,6 +73,7 @@ function App() {
           />
           <h3>Cupcake</h3>
           <p>₹80</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -73,6 +83,7 @@ function App() {
           />
           <h3>Croissant</h3>
           <p>₹90</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -82,6 +93,7 @@ function App() {
           />
           <h3>Cookies</h3>
           <p>₹120</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
 
         <div className="card">
@@ -91,6 +103,7 @@ function App() {
           />
           <h3>Brownie</h3>
           <p>₹100</p>
+          <button onClick={addToCart}>Add to Cart</button>
         </div>
       </div>
     </div>
