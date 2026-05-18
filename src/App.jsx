@@ -1,10 +1,17 @@
 import "./App.css";
 import { useState } from "react";
 function App() {
-  const [cartCount, setCartCount] = useState(0);
-  const addToCart = () => {
-  setCartCount(cartCount + 1);
-};
+ const [cart, setCart] = useState({
+  samosa: 0,
+  puff: 0,
+  cake: 0,
+  donut: 0,
+  cupcake: 0,
+  croissant: 0,
+  cookies: 0,
+  brownie: 0,
+});
+
   return (
     <div>
       <nav className="navbar">
