@@ -283,3 +283,36 @@ body {
   padding-bottom: 20px;
   font-weight: bold;
 }
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.quantity button {
+  background: #d35400;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.payment-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.payment-btn,
+.continue-btn {
+  margin: 10px;
+  padding: 12px 24px;
+  border: none;
+  background: #d35400;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
