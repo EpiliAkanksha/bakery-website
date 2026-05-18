@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -210,15 +213,19 @@ body {
 }
 
 .navbar li {
-  cursor: pointer;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
   font-size: 18px;
   transition: 0.3s;
 }
 
-.navbar li:hover {
+.navbar a:hover {
   color: #ffe7b3;
 }
-
 .hero h1 {
   font-size: 58px;
   font-weight: 800;
