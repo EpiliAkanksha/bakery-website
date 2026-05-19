@@ -12,6 +12,16 @@ function App() {
     cookies: 0,
     brownie: 0,
   });
+  const prices = {
+  samosa: 20,
+  puff: 30,
+  cake: 250,
+  donut: 60,
+  cupcake: 80,
+  croissant: 90,
+  cookies: 120,
+  brownie: 100,
+};
 
   const increaseItem = (item) => {
     setCart({
@@ -38,6 +48,15 @@ function App() {
     cart.croissant +
     cart.cookies +
     cart.brownie;
+    const totalPrice =
+    cart.samosa * prices.samosa +
+    cart.puff * prices.puff +
+    cart.cake * prices.cake +
+    cart.donut * prices.donut +
+    cart.cupcake * prices.cupcake +
+    cart.croissant * prices.croissant +
+    cart.cookies * prices.cookies +
+    cart.brownie * prices.brownie;
 
   return (
     <div>
@@ -52,6 +71,8 @@ function App() {
           <li><a href="#about">About</a></li>
           
           <li><a href="#contact">Contact</a></li>
+          
+          <li>Cart ({totalItems})</li>
         </ul>
       </nav>
 
@@ -97,7 +118,7 @@ function App() {
           <p>₹30</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Veg Puff")}
           >
           Add to Cart
         </button>
@@ -121,7 +142,7 @@ function App() {
           <p>₹250</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Chocolate cake")}
           >
           Add to Cart
         </button>
@@ -145,7 +166,7 @@ function App() {
           <p>₹60</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Donut")}
           >
           Add to Cart
         </button>
@@ -169,7 +190,7 @@ function App() {
           <p>₹80</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Cupcake")}
           >
           Add to Cart
         </button>
@@ -193,7 +214,7 @@ function App() {
           <p>₹90</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Croissant")}
           >
           Add to Cart
         </button>
@@ -217,7 +238,7 @@ function App() {
           <p>₹120</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Cookies")}
           >
           Add to Cart
         </button>
@@ -241,7 +262,7 @@ function App() {
           <p>₹100</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("samosa")}
+          onClick={() => increaseItem("Brownie")}
           >
           Add to Cart
         </button>
@@ -255,7 +276,45 @@ function App() {
           </div>
         </div>
       </div>
-
+      {totalItems > 0 && (
+        <div className="summary">
+          <h2>Order Summary</h2>
+      
+          {cart.samosa > 0 && (
+            <p>Samosa x {cart.samosa} = ₹{cart.samosa * prices.samosa}</p>
+          )}
+      
+          {cart.puff > 0 && (
+            <p>Veg Puff x {cart.puff} = ₹{cart.puff * prices.puff}</p>
+          )}
+      
+          {cart.cake > 0 && (
+            <p>Chocolate Cake x {cart.cake} = ₹{cart.cake * prices.cake}</p>
+          )}
+      
+          {cart.donut > 0 && (
+            <p>Donut x {cart.donut} = ₹{cart.donut * prices.donut}</p>
+          )}
+      
+          {cart.cupcake > 0 && (
+            <p>Cupcake x {cart.cupcake} = ₹{cart.cupcake * prices.cupcake}</p>
+          )}
+      
+          {cart.croissant > 0 && (
+            <p>Croissant x {cart.croissant} = ₹{cart.croissant * prices.croissant}</p>
+          )}
+      
+          {cart.cookies > 0 && (
+            <p>Cookies x {cart.cookies} = ₹{cart.cookies * prices.cookies}</p>
+          )}
+      
+          {cart.brownie > 0 && (
+            <p>Brownie x {cart.brownie} = ₹{cart.brownie * prices.brownie}</p>
+          )}
+      
+          <h3>Total: ₹{totalPrice}</h3>
+        </div>
+      )}
       {totalItems > 0 && (
         <div className="payment-section">
           <h2>Would you like to add more items?</h2>
