@@ -118,7 +118,7 @@ function App() {
           <p>₹30</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Veg Puff")}
+          onClick={() => increaseItem("puff")}
           >
           Add to Cart
         </button>
@@ -142,7 +142,7 @@ function App() {
           <p>₹250</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Chocolate cake")}
+          onClick={() => increaseItem("cake")}
           >
           Add to Cart
         </button>
@@ -166,7 +166,7 @@ function App() {
           <p>₹60</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Donut")}
+          onClick={() => increaseItem("donut")}
           >
           Add to Cart
         </button>
@@ -190,7 +190,7 @@ function App() {
           <p>₹80</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Cupcake")}
+          onClick={() => increaseItem("cupcake")}
           >
           Add to Cart
         </button>
@@ -214,7 +214,7 @@ function App() {
           <p>₹90</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Croissant")}
+          onClick={() => increaseItem("croissant")}
           >
           Add to Cart
         </button>
@@ -238,7 +238,7 @@ function App() {
           <p>₹120</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Cookies")}
+          onClick={() => increaseItem("cookies")}
           >
           Add to Cart
         </button>
@@ -262,7 +262,7 @@ function App() {
           <p>₹100</p>
           <button
           className="add-btn"
-          onClick={() => increaseItem("Brownie")}
+          onClick={() => increaseItem("brownie")}
           >
           Add to Cart
         </button>
